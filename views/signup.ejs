@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    <div id="signup">
+        <div id="card">
+            <h1>Signup</h1>
+            <form method="post" action="/signup">
+                <input name="firstName" type="text" placeholder=" First Name" required>
+                <input name="lastName" type="text" placeholder=" Last Name" required>
+                <input name="email" type="email" placeholder="Email Id" required>
+                <input name="password" type="password" placeholder="Password" required>
+                <button id="submit" type="submit"> 
+<span id="titleAcc">CREATE ACCOUNT</span>
+                    <div onclick="loadingBar()" id="loading" class="loading-spinner"></div>
+                </button>
+            </form>
+        </div>
+    </div>
+   <script src="../scripts/loadingBard.js"></script>
+</body>
+</html>

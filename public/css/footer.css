@@ -1,0 +1,45 @@
+footer{
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#divider{
+    margin: 20px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+#sec1 p{
+    margin-top: 10px;
+    color: rgb(94, 93, 93);
+}
+#social i{
+    font-size: 25px;
+}
+#social{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+#sec2{
+    list-style: none;
+    text-align: right;
+}
+#sec2 li{
+    margin-top: 10px;
+    color: gray;
+}
+#sec2 label{
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:474px) {
+    #sec1 h1{
+        font-size: 20px;
+    }
+}

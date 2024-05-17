@@ -1,0 +1,106 @@
+#signup{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+#signup #card{
+    overflow: hidden;
+    position: relative;
+    margin: 100px 20px 20px 20px ;
+    max-width: 500px;
+    height: 500px;
+    width: 100%;
+    border-radius: 22px;
+    background-color: rgb(17, 17, 17);
+}
+
+#signup #card h1{
+    position: absolute;
+    color: white;
+    padding: 20px;
+    font-size: 70px;
+}
+#signup #card h1::after{
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: rgb(207, 81, 81);
+    position: absolute;
+    top: 65%;
+    left: 95%;
+    border-radius: 50%;
+}
+form{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+input{
+    margin-top: 20px;
+    width: 300PX;
+    height: 50PX;
+    border-radius: 12PX;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.062);
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+}
+form button{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    margin-top: 25PX;
+    border-radius: 12px;
+}
+input:focus {
+    outline: none; /* Remove default focus outline */
+  }
+
+
+
+  p{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    font-weight: 100;
+    transform: translate(-50%, -50%);
+    color: rgb(207, 206, 206);
+}
+p span{
+    text-decoration: underline;
+  }
+
+
+
+  .loading-spinner {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #7983ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  #submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
