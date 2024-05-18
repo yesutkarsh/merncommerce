@@ -11,17 +11,24 @@
     <div id="signup">
         <div id="card">
             <h1>Login</h1>
-            <form  method="post" action="/login">
-                <input name="email" type="email" placeholder="Email Id" required>
-                <input name="password" type="password" placeholder="Password" required>
-                <button type="submit"> LOGIN ACCOUNT</button>
+            <form id="form" method="post" action="/login">
+                <input type="email" placeholder="Email Id" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button id="signUp" type="submit">
+                    <span id="titleAcc">LOGIN ACCOUNT</span>
+                    <div id="loading" class="loading-spinner"></div>
+                </button>
+                <span id="or">or</span> 
+                <p class="alreaady">Don't have an account? 
+                    <a style="color: black; text-decoration: underline;" href="./signup">
+  CREATE Account</a></p>
             </form>
-            <p>Don't Have Account
-                <span>
-                    <a href="/signup"> Create One!</a></span>
-            </p>
+          
         </div>
     </div>
+    <script src="..//scripts/loginLoader.js"></script>
+
+
    
 </body>
 </html>

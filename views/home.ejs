@@ -12,13 +12,13 @@
     <!-- Section from section.css -->
     <link rel="stylesheet" href="../css/sections.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/bottomnav.css">
     <!-- Utils -->
     <!-- Remix Icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Poetsen+One&display=swap" rel="stylesheet">
@@ -39,7 +39,9 @@
       <div id="centerNav">HEAVENLY</div>
       <div id="rightNav">
         <i class="ri-search-line"></i>
-        <i class="ri-account-circle-line"></i>
+        <a href="./account" style="color: black;">
+          <i class="ri-account-circle-line"></i>
+        </a>
         <i class="ri-heart-line"></i>
         <i class="ri-shopping-cart-line"></i>
       </div>
@@ -133,6 +135,37 @@
   <img src="../assets/3.png" alt="">
 
 </div>
+
+
+<!-- Bottom Nav Bar -->
+<span id="bottom" class="bottom-nav">
+  <a href="/" class="nav-tab active">
+    <i class="fas fa-home">
+    <i class="ri-home-3-line"></i>
+
+    </i>
+    Home
+  </a>
+  <a href="#" class="nav-tab">
+    <i class="fas fa-search">
+      <i class="ri-search-line"></i>
+    </i>
+    Search
+  </a>
+  <a href="#" class="nav-tab">
+    <i class="fas fa-shopping-cart">
+      <i class="ri-shopping-cart-line"></i>
+    </i>
+    Cart
+  </a>
+  <a href="/account" class="nav-tab">
+    <i class="fas fa-user">
+      <i class="ri-user-line"></i>
+    </i>
+    Account
+  </a>
+</span>
+<!-- Bottom Nav Bar -->
 
 
       <footer>

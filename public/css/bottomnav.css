@@ -1,0 +1,61 @@
+.main-content {
+    padding-bottom: 70px; /* Adjust for nav bar height */
+  }
+  
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Glassy effect */
+    backdrop-filter: blur(10px);
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-radius: 20px 20px 0 0; /* Rounded corners at top */
+  }
+  
+  .nav-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+    transition: color 0.2s ease, transform 0.2s ease; /* Smooth transitions */
+    padding: 8px 12px; /* Add padding for touch target */
+    border-radius: 10px; /* Rounded tab background */
+  }
+  
+  .nav-tab i {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .nav-tab:hover {
+    color: #333;
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .nav-tab.active {
+    color: #007bff; /* Highlight active tab */
+    background-color: rgba(0, 123, 255, 0.1); /* Subtle active background */
+  }
+
+
+
+  @media screen and(min-width:"704px") {
+   
+  }
+
+  @media screen and (min-width:704px) {
+    #bottom{
+        display: none;
+      }
+}
+
+#bottom{
+    z-index: 999;
+}
