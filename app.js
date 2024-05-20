@@ -16,7 +16,9 @@ app.use(express.urlencoded({ extended: false }))
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 
-mongoose.connect("mongodb://localhost:27017/ecommerceAuth", console.log("DB CONNECTED"))
+const mongourl = "mongodb+srv://shavitriverma111:6qAn8ZfzQFIA7Zov@cluster0.b96tkzj.mongodb.net/mylinks?retryWrites=true&w=majority&appName=Cluster0"
+// mongoose.connect("mongodb://localhost:27017/ecommerceAuth", console.log("DB CONNECTED"))
+mongoose.connect(mongourl, console.log("DB CONNECTED"))
 
 
 // app.get("/login", (req, res) => {
