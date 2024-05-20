@@ -1,3 +1,4 @@
+require('dotenv').config();
 const route = require("./routes/route")
 const cookieParser = require("cookie-parser")
 const express = require("express")
@@ -16,9 +17,11 @@ app.use(express.urlencoded({ extended: false }))
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 
-const mongourl = "mongodb+srv://shavitriverma111:6qAn8ZfzQFIA7Zov@cluster0.b96tkzj.mongodb.net/mylinks?retryWrites=true&w=majority&appName=Cluster0"
-// mongoose.connect("mongodb://localhost:27017/ecommerceAuth", console.log("DB CONNECTED"))
-mongoose.connect(mongourl, console.log("DB CONNECTED"))
+
+// const localMongoUrl = process.env.mongo_url;
+
+// const mongourl = "mongodb+srv://shavitriverma111:6qAn8ZfzQFIA7Zov@cluster0.b96tkzj.mongodb.net/mylinks?retryWrites=true&w=majority&appName=Cluster0"
+mongoose.connect(process.env.mongo_url, console.log("DB CONNECTED"))
 
 
 // app.get("/login", (req, res) => {
