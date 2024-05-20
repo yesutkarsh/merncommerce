@@ -7,17 +7,18 @@ const {handleSignup, handleSignIn, restrictToLoginUsers,handleuserAccoutn} = req
 
 
 router.get("/", async(req, res) => {
-  
     res.render("home")
 })
 
+
+
+
+
+// Auth Routes
 router.get("/signup", (req, res) => {
     res.render("signup")
 })
-
 router.post("/signup", handleSignup)
-
-
 router.get("/login", (req, res) => {
     res.render("login")
 })
@@ -25,7 +26,15 @@ router.get("/login", (req, res) => {
 
 
 
-// Account
+// Men
+router.get("/men",(req,res)=>{
+    res.render("men/menCollec")
+})
+
+router.post("/login", handleSignIn )
+
+
+// Account  only authenticated users allowed to view
 router.get("/account",restrictToLoginUsers, handleuserAccoutn)
 
 
@@ -33,6 +42,5 @@ router.get("/account",restrictToLoginUsers, handleuserAccoutn)
 
 
 
-router.post("/login", handleSignIn )
 
 module.exports = router;
