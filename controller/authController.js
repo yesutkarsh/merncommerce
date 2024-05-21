@@ -32,7 +32,7 @@ const handleSignIn = async(req,res)=>{
         }
         const match = await bcrypt.compare(password, user.password)
         if(match===true){
-            const token = jwt.sign({"email":user.email}, "MyEcommAppSECRET")
+            const token = jwt.sign({"email":user.email}, "MyEcommAppSECRET",{expiresIn:"1h"})
             res.cookie("token",token,{httpOnly:true})
             res.redirect("/")
         }else{
