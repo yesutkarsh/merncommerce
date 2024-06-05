@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const userModel = require("../models/userModel")
-const {handleSignup, handleSignIn, restrictToLoginUsers,handleuserAccoutn} = require("../controller/authController")
+const {handleSignup, handleSignIn, restrictToLoginUsers,handleuserAccoutn,handleView} = require("../controller/authController")
 
 
 
@@ -38,6 +38,10 @@ router.post("/login", handleSignIn )
 router.get("/account",restrictToLoginUsers, handleuserAccoutn)
 
 
+
+
+// Particular Product
+router.get("/viewProduct/:id",handleView)
 
 
 

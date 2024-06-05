@@ -19,7 +19,13 @@ let fetching = async ()=>{
         cartbutton.textContent="ADD TO CART"
         
         let purchaseButton = document.createElement("button")
-        purchaseButton.textContent="PURCHASE"
+        purchaseButton.textContent="VIEW"
+        purchaseButton.addEventListener('click',()=>{
+            window.location.href = `/viewProduct/${EachProduct.productId}`
+        })
+
+
+
         
         product.appendChild(img)
         product.appendChild(cartbutton)

@@ -21,7 +21,8 @@
 ### 6 : views
 #### all ejs files to be render to client
 
-
+### 7 : views> viewProduct
+#### UI AND UX To view particular product
 ### app.js
 #### This is Main file 
 
